@@ -1,0 +1,56 @@
+/* custom bootstrap styles*/
+$input-group-addon-bg: rgba(248, 249, 250, 0);
+$gray-100: #D8D8D8;
+$border-radius: .45rem !default;
+/* custom variables*/
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+    padding-top: 58px;
+}
+
+.form-control:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none !important;
+  }
+
+.bold {
+    font-weight: bold;
+}
+
+.oompa-item{
+    &:hover{
+        img{
+            filter: contrast(160%);
+        }
+        cursor: pointer;
+        color: rgb(56, 149, 196);
+    }
+}
+
+.no-loompas-found{
+    height: 400px;
+}
+
+input.form-control {
+    width: 160px !important;
+    border-right: 0;
+    font-weight: 500 !important;
+    color: rgba(0, 0, 0, 0.15);
+}
+
+::-webkit-input-placeholder {
+    font-weight: 500 !important;
+    color: rgba(0, 0, 0, 0.15);
+}
+
+.input-group-addon{
+    img{
+        width: 28px;
+        padding: 2px 0 2px 11px;
+        border-left: 1px solid rgba(0, 0, 0, 0.15);
+    }
+}
